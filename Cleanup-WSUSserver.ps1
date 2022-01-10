@@ -1,5 +1,5 @@
-﻿$server = ''
-$port = ''
+$server = 'localhost'
+$port = '8530'
 Write-Progress -Activity 'Getting WSUS server'
 $WSUSserver = Get-WsusServer -Name $server -PortNumber $port
 Write-Progress -Activity 'Getting approved updates, this may take a while...' -PercentComplete -1
